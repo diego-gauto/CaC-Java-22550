@@ -1,0 +1,122 @@
+.navbar {
+  background-color: #424949;
+}
+
+.container-fluid {
+  padding: 0 5rem;
+}
+
+.navbar-brand {
+  font-size: 95%;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+#navbarNavAltMarkup {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: #bdc3c7;
+}
+
+.nav-link:active {
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+#buy-tickets {
+  color: #239b56;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-img-overlay {
+  padding: 21.3rem 7.5rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card {
+  border-radius: 0%;
+}
+
+.card-img {
+  opacity: 50%;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.card-text {
+  text-align: right;
+  font-size: 104%;
+}
+
+.orador-title {
+  padding: 1rem 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.orador-title p {
+  text-transform: uppercase;
+  font-size: 60%;
+}
+
+.orador-title p span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.row.row-cols-1.row-cols-md-3 {
+  padding: 0 13rem;
+  margin-top: 0;
+}
+
+.card-body .card-title {
+  color: black;
+  font-size: 115%;
+}
+
+.card-body .card-text {
+  text-align: left;
+  font-size: 70%;
+}
+
+.col .card {
+  border-radius: 2%;
+}
+
+.card-body .btn {
+  width: 22%;
+  font-size: 70%;
+  font-weight: 700;
+  padding: 0%;
+  border-radius: 15%;
+}
+
+.card-body .btn.btn-primary {
+  width: 13%;
+}
+
+.card-body .btn.btn-danger {
+  width: 20%;
+}
