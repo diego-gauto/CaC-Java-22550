@@ -30,13 +30,25 @@
             Conf Bs As
           </a>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#">La conferencia</a>
-              <a class="nav-link" href="#">Los oradores</a>
-              <a class="nav-link" href="#">El lugar y la fecha</a>
-              <a class="nav-link" href="#">Convierte en orador</a>
-              <a class="nav-link" id="buy-tickets" href="#">Comprar tickets</a>
-            </div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Convierte en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="buy-tickets" href="#"
+                  >Comprar tickets</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -59,7 +71,7 @@
         </div>
       </div>
       <div class="orador-title">
-        <p>Conoce a los<br /><span>Oradores</span></p>
+        <p>CONOCE A LOS<br /><span>ORADORES</span></p>
       </div>
       <div class="row row-cols-1 row-cols-md-3">
         <div class="col">
@@ -111,7 +123,66 @@
           </div>
         </div>
       </div>
+      <div class="place-container">
+        <div class="img-box"><img src="./assets/honolulu.jpg" alt="" /></div>
+        <div class="place">
+          <h4 class="place-title">Bs As - Octubre</h4>
+          <p class="place-text">
+            Buenos Aires es la provincia y localidad más grande del estado de
+            Argentina, en los Estados Unidos. Honolulu es la más sureña de entre
+            las principales cuidades estadounidenses. Aunque el nombre de
+            Honolulu se refiere al área urbana en la costa sureste de la isla de
+            Oahu, la ciudad y el condado de Honolulu han formado una ciudad-
+            condado consolidada que cubre toda la ciudad ( aproximadamente 600
+            km<sup>2</sup> de superficie).
+          </p>
+          <button type="button" class="btn btn-outline-secondary">
+            Conocé más
+          </button>
+        </div>
+      </div>
+      <div class="orador-title">
+        <p>
+          CONVIERTETÉ EN UN<br /><span>ORADOR</span><br />Anótate como orador
+          para dar una charla ignite. Cuéntanos de qué quieres hablar!
+        </p>
+      </div>
+      <form class="row g-2">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Nombre" />
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Apellido" />
+        </div>
+        <div>
+          <textarea
+            class="form-control"
+            placeholder="Sobre qué quieres hablar?"
+            rows="4"
+            id="textarea"
+          ></textarea>
+          <label for="textarea" id="text-label"
+            >Recuerda incluir un título para tu charla</label
+          >
+        </div>
+
+        <!-- Submit button -->
+
+        <button type="submit" class="btn" id="form-button">Enviar</button>
+      </form>
     </main>
+    <footer>
+      <p>Preguntas<br />frecuentes</p>
+      <p>Contáctanos</p>
+      <p>Prensa</p>
+      <p>Conferencias</p>
+      <p>
+        Términos y<br />
+        condiciones
+      </p>
+      <p>Privacidad</p>
+      <p>Estudiantes</p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

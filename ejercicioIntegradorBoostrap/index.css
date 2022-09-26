@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar {
   background-color: #424949;
 }
@@ -26,10 +32,6 @@
   color: #bdc3c7;
 }
 
-.nav-link:active {
-  color: white;
-}
-
 .nav-link:hover {
   color: white;
 }
@@ -38,11 +40,11 @@
   color: #239b56;
 }
 
-main {
+/* main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 .card-img-overlay {
   padding: 21.3rem 7.5rem 0rem 0rem;
   display: flex;
@@ -71,14 +73,14 @@ main {
 }
 
 .orador-title {
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
   text-align: center;
   margin-bottom: 0;
+  clear: both;
 }
 
 .orador-title p {
-  text-transform: uppercase;
-  font-size: 60%;
+  font-size: 70%;
 }
 
 .orador-title p span {
@@ -88,7 +90,7 @@ main {
 
 .row.row-cols-1.row-cols-md-3 {
   padding: 0 13rem;
-  margin-top: 0;
+  margin: 0;
 }
 
 .card-body .card-title {
@@ -119,4 +121,69 @@ main {
 
 .card-body .btn.btn-danger {
   width: 20%;
+}
+
+.place-container {
+  margin: 2rem 0 0 0;
+  padding: 0;
+  width: 100%;
+  background-color: #424949;
+}
+
+.img-box {
+  float: left;
+  width: 50%;
+}
+
+.place {
+  float: right;
+  width: 50%;
+  height: 100%;
+  color: white;
+  background-color: #424949;
+  padding-left: 1rem;
+}
+.img-box img {
+  width: 100%;
+}
+.place-title {
+  padding: 1rem 0 0 0;
+}
+.place-text {
+  padding: 0.5rem 0 0 0;
+  font-size: 80%;
+}
+
+.btn-outline-secondary {
+  color: white;
+}
+
+form {
+  padding: 0 22rem;
+}
+
+#form-button {
+  background-color: #7dcea0;
+  color: white;
+}
+
+#text-label {
+  font-size: 65%;
+  color: gray;
+}
+
+footer {
+  margin-top: 1em;
+  padding: 1em 13em;
+  display: flex;
+  background-color: #1b4f72;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 90%;
+}
+
+footer p {
+  margin: 0;
 }
