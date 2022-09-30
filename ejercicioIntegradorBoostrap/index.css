@@ -4,28 +4,8 @@
   box-sizing: border-box;
 }
 
-.navbar {
+nav {
   background-color: #424949;
-}
-
-.container-fluid {
-  padding: 0 5rem;
-}
-
-.navbar-brand {
-  font-size: 95%;
-  color: white;
-  font-weight: 500;
-}
-
-.navbar-brand:hover {
-  color: white;
-}
-
-#navbarNavAltMarkup {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
 
 .nav-link {
@@ -40,43 +20,31 @@
   color: #239b56;
 }
 
-/* main {
+main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-} */
-.card-img-overlay {
-  padding: 21.3rem 7.5rem 0rem 0rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
+  text-align: center;
 }
 
-.card {
-  border-radius: 0%;
+.oscurecer-img {
+  filter: brightness(50%);
 }
 
-.card-img {
-  opacity: 50%;
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: right;
 }
-
-.card-title {
-  font-size: 2rem;
-  font-weight: 600;
+.texto-encima {
+  position: absolute;
+  bottom: 26%;
+  right: 9%;
   color: white;
 }
 
-.card-text {
-  text-align: right;
-  font-size: 104%;
-}
-
 .orador-title {
-  padding: 1rem 0 0 0;
-  text-align: center;
+  padding: 1% 0 0 0;
   margin-bottom: 0;
-  clear: both;
 }
 
 .orador-title p {
@@ -84,50 +52,26 @@
 }
 
 .orador-title p span {
-  font-size: 2rem;
+  font-size: xx-large;
   font-weight: 500;
 }
 
-.row.row-cols-1.row-cols-md-3 {
-  padding: 0 13rem;
-  margin: 0;
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.card-body .card-title {
-  color: black;
-  font-size: 115%;
-}
-
-.card-body .card-text {
+.card-body {
   text-align: left;
-  font-size: 70%;
-}
-
-.col .card {
-  border-radius: 2%;
-}
-
-.card-body .btn {
-  width: 22%;
-  font-size: 70%;
-  font-weight: 700;
-  padding: 0%;
-  border-radius: 15%;
-}
-
-.card-body .btn.btn-primary {
-  width: 13%;
-}
-
-.card-body .btn.btn-danger {
-  width: 20%;
 }
 
 .place-container {
-  margin: 2rem 0 0 0;
+  margin: 2em 0 0 0;
   padding: 0;
   width: 100%;
   background-color: #424949;
+  text-align: left;
 }
 
 .img-box {
@@ -140,7 +84,6 @@
   width: 50%;
   height: 100%;
   color: white;
-  background-color: #424949;
   padding-left: 1rem;
 }
 .img-box img {
@@ -159,31 +102,81 @@
 }
 
 form {
-  padding: 0 22rem;
+  padding: 0 25%;
 }
 
 #form-button {
-  background-color: #7dcea0;
   color: white;
 }
 
 #text-label {
   font-size: 65%;
   color: gray;
+  display: flex;
+  justify-content: flex-start;
 }
 
 footer {
-  margin-top: 1em;
-  padding: 1em 13em;
+  margin-top: 2%;
+  padding: 1% 0%;
   display: flex;
   background-color: #1b4f72;
   color: white;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   font-size: 90%;
 }
 
-footer p {
-  margin: 0;
+.footer-left,
+.footer-right {
+  width: 100%;
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .texto-encima p {
+    font-size: 80%;
+  }
+
+  .place-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-box,
+  .place {
+    width: 100%;
+  }
+
+  .place {
+    padding-bottom: 1%;
+  }
+
+  form {
+    padding: 0 10%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #gates-card {
+    margin: 1em 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .texto-encima {
+    font-size: 80%;
+    bottom: 5%;
+    right: 2%;
+  }
 }
